@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    max-width: 1024px;
+    margin: auto;
+    height: 100vh;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #CBECFF;
+    align-items: center;
+}
