@@ -4,27 +4,33 @@
     <title>Finkit markup test</title>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <link rel="stylesheet" href="/src/css/responsive.css" />
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <link rel="stylesheet" href="/src/css/responsive.css"/>
 </head>
 <body>
-    <header>
-        <div class="header__toggle-lang">
-            <button class="header__toggle-lang__button enabled">Ru</button>
-            <button class="header__toggle-lang__button">En</button>
-        </div>
-        <div class="header__title">
+<header class="header background__light-blue">
+    <div class="header__block__toggle-lang">
+        <button class="header__block__toggle-lang__button background__light-blue enabled">Ru</button>
+        <button class="header__block__toggle-lang__button background__light-blue text__dark-grey">En</button>
+    </div>
+    <div class="header__title">
+        <div class="wrapper__flex-direction-row">
             <div class="header__title__content">
-                <h1>
-                    FinKit
+                <h1 class="header__title__content__h1 text__line-height-1-dot-3">
+                    Fin
+                    <span class="header__title__content__h1__span background__white text__dark-blue">
+                        Kit
+                    </span>
                 </h1>
-                <div class="header__title__content__description-text">
-                    Гибкая мобильная платформа для быстрой реализации инвестиционных сервисов.
+                <div class="header__title__content__description-text text__line-height-1-dot-3">
+                    Гибкая мобильная платформа<br>
+                    для быстрой реализации<br>
+                    инвестиционных сервисов.
                 </div>
-                <button class="button__order-demo">
+                <button class="button__order-demo background__dark-blue text__white">
                     Заказать демо
                 </button>
             </div>
@@ -32,102 +38,126 @@
                 <img src="" alt="header__title__img">
             </div>
         </div>
-        <nav class="nav">
-            <ul class="nav__ul">
-                <li class="nav__ul__li">
-                    <div class="nav__ul__li__title">Удобный пользовательский интерфейс</div>
-                    <div class="nav__ul__li__icon"><img src="" alt=""></div>
+    </div>
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__ul__li background__white block__box-sizing__border-box">
+                <div class="nav__ul__li__title">Удобный<br>
+                    пользовательский<br>
+                    интерфейс
+                </div>
+                <div class="nav__ul__li__icon"><img src="" alt=""></div>
+            </li>
+            <li class="nav__ul__li background__white block__box-sizing__border-box">
+                <div class="nav__ul__li__title">Панель<br>
+                    администратора<br>
+                    для ведения учета
+                </div>
+                <div class="nav__ul__li__icon"><img src="" alt=""></div>
+            </li>
+            <li class="nav__ul__li background__white block__box-sizing__border-box">
+                <div class="nav__ul__li__title">Простая<br>
+                    и быстрая<br>
+                    интеграция
+                </div>
+                <div class="nav__ul__li__icon"><img src="" alt=""></div>
+            </li>
+            <li class="nav__ul__li background__white block__box-sizing__border-box">
+                <div class="nav__ul__li__title">Гибкая<br>
+                    масштабируемая<br>
+                    система
+                </div>
+                <div class="nav__ul__li__icon"><img src="" alt=""></div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <section class="main_section__key-products">
+        <header class="main_section__header text__line-height-1-dot-3 main_section__header__key-products">
+            Наши <span class="text__dark-blue">
+            ключевые продукты</span><br>
+            для инвестиций
+        </header>
+        <div class="wrapper__flex-direction-row">
+            <div class="main_section__content-block block__box-sizing__border-box main_section__content-block__key-products">
+                <header class="text__line-height-1-dot-4">
+                    <h1>
+                        Платформа для<br>автоследования
+                    </h1>
+                    <div>
+                        Копирование стратегий<br>в автономном режиме
+                    </div>
+                </header>
+                <div class="main_section_-key-products__item__img">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="main_section__content-block block__box-sizing__border-box main_section__content-block__key-products">
+                <header class="main_section_-key-products__item__header text__line-height-1-dot-4">
+                    <h1>
+                        Платформа для<br>робо-эдвайзинга
+                    </h1>
+                    <div>
+                        Персонализированный<br>подбор стратегий исходя из<br>заданных параметров
+                    </div>
+                </header>
+                <div class="main_section_-key-products__item__img">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main_section__features wrapper__flex-direction-row">
+        <div class="main_section__features__column block__box-sizing__border-box">
+            <header class="main_section__header text__line-height-1-dot-3">
+                <span class="text__dark-blue">
+                    Представляем ценность
+                </span><br>
+                для броĸера и банĸа
+            </header>
+            <div class="main_section__features__description-text text__line-height-1-dot-3">
+                Мы помогаем броĸерам и банĸам запустить собственное<br>
+                мобильное приложение для инвестиций в ĸоротĸие<br>
+                сроĸи и с эĸономией бюджета
+            </div>
+            <button class="button__order-demo background__dark-blue text__white">
+                Заказать демо
+            </button>
+        </div>
+        <div class="main_section__features__column block__box-sizing__border-box">
+            <ul class="main_section__features__ul">
+                <li class="main_section__features__ul__li">
+                    <div class="main_section__features__ul__li__icon">
+                        Эĸономим время и деньги<br>
+                        на запусĸ digital сервисов
+                    </div>
+                    <div class="main_section__features__ul__li__content"></div>
                 </li>
-                <li class="nav__ul__li">
-                    <div class="nav__ul__li__title">Панель администратора для ведения учета</div>
-                    <div class="nav__ul__li__icon"><img src="" alt=""></div>
+                <li class="main_section__features__ul__li">
+                    <div class="main_section__features__ul__li__icon">
+                        Создаем канал привлечения<br>
+                        новых клиентов
+                    </div>
+                    <div class="main_section__features__ul__li__content"></div>
                 </li>
-                <li class="nav__ul__li">
-                    <div class="nav__ul__li__title">Простая и быстрая интеграция</div>
-                    <div class="nav__ul__li__icon"><img src="" alt=""></div>
+                <li class="main_section__features__ul__li">
+                    <div class="main_section__features__ul__li__icon">
+                        Помогаем увеличить выручку путем запуска<br>
+                        нового продукта
+                    </div>
+                    <div class="main_section__features__ul__li__content"></div>
                 </li>
-                <li class="nav__ul__li">
-                    <div class="nav__ul__li__title">Гибкая масштабируемая система</div>
-                    <div class="nav__ul__li__icon"><img src="" alt=""></div>
+                <li class="main_section__features__ul__li">
+                    <div class="main_section__features__ul__li__icon">
+                        Повышаем лояльность<br>
+                        действующих клиентов
+                    </div>
+                    <div class="main_section__features__ul__li__content"></div>
                 </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="main_section__key-products">
-            <header class="main_section__header">
-                Наши <span class="main_section__header__emphasized-text">
-                ключевые продукты</span> для инвестиций
-            </header>
-            <div class="main_section_-key-products__item">
-                <header class="main_section_-key-products__item__header">
-                    <h1 class="main_section_-key-products__item__header__title">
-                        Платформа для автоследования
-                    </h1>
-                    <div class="main_section_-key-products__item__header__content">
-                        Копирование стратегий в автономном режиме
-                    </div>
-                </header>
-                <div class="main_section_-key-products__item__img">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div class="main_section_-key-products__item">
-                <header class="main_section_-key-products__item__header">
-                    <h1 class="main_section_-key-products__item__header__title">
-                        Платформа для робо-эдвайзинга
-                    </h1>
-                    <div class="main_section_-key-products__item__header__content">
-                        Персонализированный подбор стратегий исходя из заданных параметров
-                    </div>
-                </header>
-                <div class="main_section_-key-products__item__img">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="main_section__features">
-            <div class="main_section__features__column">
-                <header class="main_section__header">
-                    <span class="main_section__header__emphasized-text">Представляем ценность</span> для броĸера и банĸа
-                </header>
-                <div class="main_section__features__description">
-                    Мы помогаем броĸерам и банĸам запустить собственное
-                    мобильное приложение для инвестиций в ĸоротĸие сроĸи и с эĸономией бюджета
-                </div>
-                <button class="button__order-demo">
-                    Заказать демо
-                </button>
-            </div>
-            <div class="main_section__features__column">
-                <ul class="main_section__features__ul">
-                    <li class="main_section__features__ul__li">
-                        <div class="main_section__features__ul__li__icon">
-                            Эĸономим время и деньги на запусĸ digital сервисов
-                        </div>
-                        <div class="main_section__features__ul__li__content"></div>
-                    </li>
-                    <li class="main_section__features__ul__li">
-                        <div class="main_section__features__ul__li__icon">
-                            Создаем канал привлечения новых клиентов
-                        </div>
-                        <div class="main_section__features__ul__li__content"></div>
-                    </li>
-                    <li class="main_section__features__ul__li">
-                        <div class="main_section__features__ul__li__icon">
-                            Помогаем увеличить выручку путем запуска нового продукта
-                        </div>
-                        <div class="main_section__features__ul__li__content"></div>
-                    </li>
-                    <li class="main_section__features__ul__li">
-                        <div class="main_section__features__ul__li__icon">
-                            Повышаем лояльность действующих клиентов
-                        </div>
-                        <div class="main_section__features__ul__li__content"></div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 </body>
 </html>
