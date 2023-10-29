@@ -7,6 +7,7 @@ body {
 
 button {
     border: 0;
+    background: transparent;
 }
 
 .background__dark-blue {
@@ -15,10 +16,6 @@ button {
 
 .background__white {
     background-color: #FFF;
-}
-
-.background__light-blue {
-    background-color: #CBECFF;
 }
 
 .text__dark-blue {
@@ -56,6 +53,10 @@ button {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 150px;
+    background: url("/src/img/header_img_smartphone.png") no-repeat;
+    background-size: contain;
+    background-color: #CBECFF;
+    background-position: right 20px;
 }
 
 .header__block__toggle-lang {
@@ -109,8 +110,8 @@ button {
     justify-content: space-between;
 }
 
-.header__title__content {
-    width: 384px;
+.header__block__content {
+    width: 50%;
 }
 
 .header__title__content__description-text {
@@ -179,6 +180,27 @@ main section {
     width: 502px;
     height: 328px;
     padding: 37px 20px 0 20px;
+    overflow: hidden;
+}
+
+.main_section__content-block__with-image {
+    box-shadow: 8px -8px 16px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    width: 218px;
+    padding: 0;
+}
+
+.main_section__content-block img {
+    width: 100%;
+    position: relative;
+}
+
+.main_section__content-block img#img__strategies {
+    top: -12px
+}
+
+.main_section__content-block img#img__risks {
+    top: -44px
 }
 
 .main_section__content-block__key-products {

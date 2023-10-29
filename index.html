@@ -11,33 +11,26 @@
     <link rel="stylesheet" href="/src/css/responsive.css"/>
 </head>
 <body>
-<header class="header background__light-blue">
+<header class="header">
     <div class="header__block__toggle-lang">
-        <button class="header__block__toggle-lang__button background__light-blue enabled">Ru</button>
-        <button class="header__block__toggle-lang__button background__light-blue text__dark-grey">En</button>
+        <button class="header__block__toggle-lang__button enabled">Ru</button>
+        <button class="header__block__toggle-lang__button text__dark-grey">En</button>
     </div>
-    <div class="header__title">
-        <div class="wrapper__flex-direction-row">
-            <div class="header__title__content">
-                <h1 class="header__title__content__h1 text__line-height-1-dot-3">
-                    Fin
-                    <span class="header__title__content__h1__span background__white text__dark-blue">
+    <div class="header__block__content">
+        <h1 class="header__title__content__h1 text__line-height-1-dot-3">
+            Fin
+            <span class="header__title__content__h1__span background__white text__dark-blue">
                         Kit
                     </span>
-                </h1>
-                <div class="header__title__content__description-text text__line-height-1-dot-3">
-                    Гибкая мобильная платформа<br>
-                    для быстрой реализации<br>
-                    инвестиционных сервисов.
-                </div>
-                <button class="button__order-demo background__dark-blue text__white">
-                    Заказать демо
-                </button>
-            </div>
-            <div class="header__title__img">
-                <img src="" alt="header__title__img">
-            </div>
+        </h1>
+        <div class="header__title__content__description-text text__line-height-1-dot-3">
+            Гибкая мобильная платформа<br>
+            для быстрой реализации<br>
+            инвестиционных сервисов.
         </div>
+        <button class="button__order-demo background__dark-blue text__white">
+            Заказать демо
+        </button>
     </div>
     <nav class="nav">
         <ul class="nav__ul">
@@ -80,7 +73,9 @@
             для инвестиций
         </header>
         <div class="wrapper__flex-direction-row">
-            <div class="main_section__content-block block__box-sizing__border-box main_section__content-block__key-products">
+            <div class="main_section__content-block 
+            wrapper__flex-direction-row block__box-sizing__border-box
+            main_section__content-block__key-products">
                 <header class="text__line-height-1-dot-4">
                     <h1>
                         Платформа для<br>автоследования
@@ -89,12 +84,14 @@
                         Копирование стратегий<br>в автономном режиме
                     </div>
                 </header>
-                <div class="main_section_-key-products__item__img">
-                    <img src="" alt="">
+                <div class="main_section__content-block main_section__content-block__with-image">
+                    <img id="img__strategies" src="/src/img/strategies.png" alt="/src/img/strategies.png">
                 </div>
             </div>
-            <div class="main_section__content-block block__box-sizing__border-box main_section__content-block__key-products">
-                <header class="main_section_-key-products__item__header text__line-height-1-dot-4">
+            <div class="main_section__content-block 
+            wrapper__flex-direction-row block__box-sizing__border-box 
+            main_section__content-block__key-products">
+                <header class="main_section__key-products__item__header text__line-height-1-dot-4">
                     <h1>
                         Платформа для<br>робо-эдвайзинга
                     </h1>
@@ -102,8 +99,8 @@
                         Персонализированный<br>подбор стратегий исходя из<br>заданных параметров
                     </div>
                 </header>
-                <div class="main_section_-key-products__item__img">
-                    <img src="" alt="">
+                <div class="main_section__content-block main_section__content-block__with-image">
+                    <img id="img__risks" src="/src/img/risks.png" alt="/src/img/risks.png">
                 </div>
             </div>
         </div>
