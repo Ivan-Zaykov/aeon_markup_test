@@ -3,11 +3,20 @@ body {
     /*max-width: 1024px;*/
     margin: auto;
     padding: 0 60px 0 60px;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    margin: 0;
 }
 
 button {
     border: 0;
     background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .background__dark-blue {
@@ -52,10 +61,10 @@ button {
 
 .header {
     height: 626px;
-    padding: 29px 235px 0 235px;
+    padding: 29px 206px 0 206px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     margin-bottom: 150px;
     background: url("/src/img/header_img_smartphone.png") no-repeat;
     background-size: contain;
@@ -67,7 +76,10 @@ button {
     height: 20px;
     display: flex;
     justify-content: right;
-    margin-bottom: 78px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 79px;
 }
 
 .header__block__toggle-lang__button {
@@ -83,7 +95,6 @@ button {
 .header__block__toggle-lang__button.enabled {
     background-color: #FFF;
     color: #0962E8;
-    font-size: 14px;
 }
 
 .header__block__toggle-lang__button:first-of-type {
@@ -94,7 +105,9 @@ button {
     width: 230px;
     height: 78px;
     font-size: 64px;
+    line-height: 1.3;
     display: flex;
+    align-items: center;
     margin-bottom: 14px;
     font-weight: 700;
     text-align: center;
@@ -102,10 +115,9 @@ button {
 
 .header__title__content__h1__span {
     border-radius: 20px;
-    width: 122px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-left: 5px;
 }
 
 .wrapper__flex-direction-row {
@@ -116,10 +128,12 @@ button {
 
 .header__block__content {
     width: 50%;
+    margin-bottom: 162px;
 }
 
 .header__title__content__description-text {
     margin-bottom: 38px;
+    font-size: 22px;
 }
 
 .button__order-demo {
@@ -175,6 +189,7 @@ button {
 
 .main {
     margin: auto;
+    padding: 0 209px 0 209px;
 }
 
 main section {
@@ -183,6 +198,8 @@ main section {
 
 .main_section__header {
     font-size: 38px;
+    font-weight: 500;
+    line-height: 1.3;
     text-align: center;
 }
 
@@ -193,8 +210,21 @@ main section {
 .main_section__content-block {
     width: 502px;
     height: 328px;
-    padding: 37px 20px 0 20px;
+    padding: 37px 30px 0 20px;
     overflow: hidden;
+}
+
+.main_section__content-block__h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.main_section__content-block__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
 .main_section__content-block__with-image {
@@ -243,9 +273,9 @@ main section {
 }
 
 .main_section__features__ul__li {
-    width: 38%;
+    width: 43%;
     height: 140px;
-    padding: 0 26px 30px 26px;
+    padding: 0 0 30px 26px;
     display: flex;
     flex-direction: column;
 }
@@ -260,4 +290,10 @@ main section {
     justify-content: space-around;
     padding-top: 5px;
     padding-left: 5px;
+    margin-bottom: 13px
+}
+
+.main_section__features__ul__li__text {
+    font-size: 14px;
+    line-height: 1.4;
 }
