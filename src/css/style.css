@@ -1,8 +1,5 @@
 body {
-    width: 1440px;
-    /*max-width: 1024px;*/
     margin: auto;
-    padding: 0 60px 0 60px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -21,6 +18,10 @@ button:hover {
 
 .background__dark-blue {
     background-color: #0962E8;
+}
+
+.background__medium-blue {
+    background-color: #CBECFF;
 }
 
 .background__light-blue {
@@ -59,16 +60,24 @@ button:hover {
     box-sizing: border-box;
 }
 
+.wrapper__content {
+    max-width: 1024px;
+    margin: auto;
+}
+
 .header {
     height: 626px;
-    padding: 29px 206px 0 206px;
+    width: 100vw;
+    padding-top: 29px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     margin-bottom: 150px;
+}
+
+.header .wrapper__content {
     background: url("/src/img/header_img_smartphone.png") no-repeat;
     background-size: contain;
-    background-color: #CBECFF;
     background-position: right 20px;
 }
 
@@ -189,7 +198,6 @@ button:hover {
 
 .main {
     margin: auto;
-    padding: 0 209px 0 209px;
 }
 
 main section {
